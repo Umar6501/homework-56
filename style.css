@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+.phone {
+  background-color: rgb(0, 0, 0);
+}
+
+.container {
+  max-width: 350px;
+  margin: 70px auto;
+}
+
+.phone-content {
+  width: 350px;
+  height: 600px;
+  border: 3px solid gray;
+  background-color: rgb(66, 61, 61);
+  border-radius: 39px;
+}
+
+.phone-items {
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  grid-template-rows: 100px 100px;
+  gap: 10px;
+  margin: 57px 30px;
+}
+
+.item {
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-self: center;
+  gap: 9px;
+}
+
+.item a p {
+  color: white;
+  font-family: sans-serif;
+}
+
+/* ////////////////////////////// */
+
+.back {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.timer-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timerBtn {
+  width: 80px;
+  height: 30px;
+  border: 3px solid;
+  border-radius: 12px;
+  background: #000;
+  color: aliceblue;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+#timeDisplay {
+  font-size: 75px;
+  color: rgb(255, 255, 255);
+}
+
+#timeContainer {
+  text-align: center;
+  /* border: 3px solid; */
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.clock .phone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.timer-content {
+  display: flex;
+  flex-direction: column;
+}
+.timer-content .timer {
+  background-color: rgba(0, 255, 255, 0.479);
+  border-radius: 20px;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.timer-content .back {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.timer-content .h2 {
+  font-family: sans-serif;
+  color: white;
+  font-size: 50px;
+}
+
+/* ............... */
+.box-battery {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#battery {
+  width: 161px;
+  height: 101px;
+  transform: rotate(270deg);
+  border-radius: 22px;
+  background-color: transparent;
+  border: 5px solid gray;
+  position: relative;
+}
+#battery-level {
+  height: 100%;
+  background-color: #0f0;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 4px;
+}
+#charging-indicator {
+  width: 8px;
+  height: 20px;
+  border-radius: 15%;
+  background-color: #f00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#charging-indicator2 {
+  width: 22px;
+  height: 6px;
+  border-radius: 15%;
+  background-color: #f00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -82%) rotate(35deg);
+}
+#charging-indicator3 {
+  width: 22px;
+  height: 6px;
+  border-radius: 15%;
+  background-color: #f00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-82%, -30%) rotate(35deg);
+}
+.dd {
+  width: 44px;
+  height: 12px;
+  border-radius: 9%;
+  background-color: gray;
+  position: absolute;
+  top: 183px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.p {
+  font-family: serif;
+}
